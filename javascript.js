@@ -1,5 +1,6 @@
 let playerScore = 0;
 let computerScore = 0;
+// initializes variables to store the player and computer scores
 
 function getComputerChoice() {
     const array = ["Rock", "Paper", "Scissors"];
@@ -7,6 +8,7 @@ function getComputerChoice() {
     
     return getIndex;
 }
+// pseudo random selection of either Rock Paper or Scissors
 
 function round(playerSelection, computerSelection) {
     if (playerSelection === "Rock" && computerSelection === "Paper") {
@@ -65,6 +67,9 @@ function round(playerSelection, computerSelection) {
         return round(playerSelection, computerSelection);
     }
 }
+// plays a single round, conditionaly checking the player's input choice against the computer's random choice
+// the result of each round is logged in the console
+// player scores get updated here!
 
 function fixInput(input) {
     if (input) {
@@ -73,6 +78,7 @@ function fixInput(input) {
         return input = "Invalid Choice!";
     }
 }
+// makes the player input case insensitive by manipulating the string
 
 function game() {
     for (let i = 0; i < 5; i++) {
@@ -85,10 +91,8 @@ function game() {
     console.log(`The Computer's score is ${computerScore}`);
     playerScore > computerScore ? console.log("You Win!") : console.log("Computer Wins!");
 }
+// loops over the round() function five times
 
 game();
 
-// play a best-of-five game
-// keep score
-// report a winner or loser at the end
 
