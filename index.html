@@ -2,34 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <button class="btn">Rock</button>
-    <button class="btn">Paper</button>
-    <button class="btn">Scissors</button>
+    <header>
+        <h1><a href="#">Rock Paper Scissors!</a></h1>
+    </header>
+    <main>
 
-    <div class="tally">
-        <span id="yourChoice">Your Choice: </span>
-        <span id="computerChoice">Computer Choice: </span>
-        <div class="score">
-            <span id="playerScore">Your Score: </span>
-            <span id="computerScore">Computer Score: </span>
+        <div class="buttons">
+            <button class="btn">Rock</button>
+            <button class="btn">Paper</button>
+            <button class="btn">Scissors</button>
         </div>    
-        <div class="result">
-            <p id="rWinner">Round Winner: </p>
-            <p id="gWinner">Game Winner: </p>
-        </div>
-    </div>
-    <script src="javascript.js"></script>
 
-    <h1>The Rules:</h1>
-    <h2>1. First player to score 5 points win</h2>
-    <h2>2. Your Choice: shows your previous selection</h2>
-    <h2>3. Computer Choice: shows the computer's previous choice</h2>
-    <h2>4. Round winner: shows the winner of the previous round</h2>
-    <h2>5. Game winner: shows the winner of the previous game</h2>
-    <h2>6. Click the corresponding button when you've made your choice. The computer will make his choice automatically at the same time</h2>
+        <div class="tally">
+            <div class="choices">
+                <span class="gameState" id="yourChoice">Your Choice: </span>
+                <span class="gameState" id="computerChoice">Computer Choice: </span>
+            </div>    
+            <div class="score">
+                <span class="gameState" id="playerScore">Your Score: </span>
+                <span class="gameState" id="computerScore">Computer Score: </span>
+            </div>    
+            <div class="result">
+                <p class="gameState" id="rWinner">Round Winner: </p>
+                <p class="gameState" id="gWinner">Game Winner: </p>
+            </div>
+        </div>
+
+        <div class="rules">
+            <ul class="rulesList">
+                <li class="rli">The Rules:</li>
+                <li class="rli">First player to score 5 points win</li>
+                <li class="rli">Your Choice: shows your previous selection</li>
+                <li class="rli">Computer Choice: shows the computer's previous choice</li>
+                <li class="rli">Round winner: shows the winner of the previous round</li>
+                <li class="rli">Game winner: shows the winner of the previous game</li>
+                <li class="rli">Click the corresponding button when you've made your choice. The computer will make his choice automatically at the same time</li>
+            </ul>    
+        </div>    
+
+    </main>
+    <footer>
+        <p><a href="https://github.com/Cartman223">Por: João Pedro Alves da Cunha</a></p>
+    </footer>    
+    <script src="javascript.js"></script>
 </body>
 </html>
