@@ -1,0 +1,98 @@
+* {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #F8EDEB ;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #FEC89A;
+    padding: 1em;
+}
+
+header > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1 > a {
+    text-decoration: none;
+    color: #F8EDEB;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    padding-top: 5em;
+}
+
+.buttons > .btn {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    padding: 0.5em;
+    border: solid red 1px;
+    color: #f15bb5;
+}
+
+.buttons > .btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.tally {
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #780000;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.tally > .choices, .score, .result {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.gameState {
+    font-size: 1.1em;
+    padding: 0.5em;    
+}
+
+.rulesList {
+    list-style: none;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #780000;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.rulesList > .rli {
+    padding: 0.25em;
+    font-weight: 800;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 1em;
+    background-color: #FFB5A7;
+}
+
+footer > p > a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #8338ec;
+    padding: 0.5em;
+    font-family: Arial, Verdana, sans-serif;
+}
